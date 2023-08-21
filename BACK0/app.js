@@ -54,7 +54,7 @@ app.use(function (req, res, next) {
   next(createError(404));
 });
 
-const port = 3000;
+const port = 3001;
 app.listen(port, () => {
   console.log(`Servidor en funcionamiento en http://localhost:${port}`);
 });
