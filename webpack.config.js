@@ -9,31 +9,17 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-react'],
-          },
-        },
-      },
-      {
-        test: /.css$/,
-        use: ['style-loader', 'css-loader'],
-      },
+    // Reglas de los loaders
     ],
   },
   resolve: {
     extensions: ['.js', '.jsx'],
     fallback: {
-      crypto: require.resolve('crypto-browserify'),
-      fs: false,
-      http: require.resolve('stream-http'),
+      // Fallbacks
     },
   },
   devServer: {
+    port: 3001, // Cambia este valor al puerto que desees
     liveReload: false,
   },
 };
