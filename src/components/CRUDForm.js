@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import CrudTable from "./CrudTable";
+import CrudApp from "../CrudApp";
 
 const CRUDForm = () => {
   const [data, setData] = useState([]); // Inicializa tus datos aquí

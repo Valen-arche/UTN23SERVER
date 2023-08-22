@@ -1,4 +1,4 @@
-import './App.css'
+import '../src/App.css'
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
@@ -14,8 +14,8 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 function App() {
   return (
 <div className='App'>
+  
 
- 
   <BrowserRouter> 
    <Header/>        
   <Nav/>
