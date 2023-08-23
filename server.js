@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
   res.send('¡Hola desde el servidor!');
 });
 
-const PORT = 3002; // Puerto en el que el servidor escuchará
+const PORT = 0; // Puerto en el que el servidor escuchará
 
 app.listen(PORT, () => {
   console.log(`Servidor escuchando en el puerto ${PORT}`);

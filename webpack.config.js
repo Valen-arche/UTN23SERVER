@@ -7,6 +7,10 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
+  performance: {
+    // Desactivar advertencias para módulos críticos
+    hints: false
+  },
   module: {
     rules: [
       {
@@ -31,13 +35,13 @@ module.exports = {
       crypto: require.resolve('crypto-browserify'),
       fs: false,
       timers: false,
-      "zlib": require.resolve("browserify-zlib"),
       http: require.resolve('stream-http'),
+      assert: require.resolve('assert')
     },
   },
   
   devServer: {
-    port: 3001,
-    liveReload: false,
+    port: 0,
+    liveReload: true,
   },
 };

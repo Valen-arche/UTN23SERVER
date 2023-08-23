@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import server from '../src/server'
+import server from '../server';
 
 
 const CrudApp = () => {

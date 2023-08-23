@@ -1,73 +1,76 @@
 {
-  "name": "front",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "async_hooks": "^1.0.0",
-    "axios": "^1.4.0",
-    "body-parser": "^1.20.2",
-    "bootstrap-icons": "^1.10.5",
-    "browserify-zlib": "^0.2.0",
-    "buffer": "^6.0.3",
-    "built": "^1.3.2",
-    "crypto-browserify": "^3.12.0",
-    "dotenv": "^16.3.1",
-    "html-webpack-plugin": "^5.5.3",
-    "mysql": "^2.18.1",
-    "net": "^1.0.2",
-    "nodemon": "^3.0.1",
-    "path": "^0.12.7",
-    "querystring": "^0.2.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.13.0",
-    "send": "^0.18.0",
-    "stream": "^0.0.2",
-    "stream-http": "^3.2.0",
-    "tar": "^6.1.15",
-    "url": "^0.11.1",
-    "util": "^0.12.5",
-    "webpack-dev-server": "^4.15.1"
-  },
-  "scripts": {
-    "start": "webpack-dev-server --mode development --open --port 3001",
-    "build": "webpack --mode production",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@babel/core": "^7.22.10",
-    "@babel/preset-env": "^7.22.10",
-    "@babel/preset-react": "^7.22.5",
-    "@testing-library/jest-dom": "^6.0.1",
-    "@testing-library/react": "^14.0.0",
-    "@testing-library/user-event": "^14.4.3",
-    "babel-loader": "^9.1.3",
-    "css-loader": "^6.8.1",
-    "react-scripts": "^5.0.1",
-    "style-loader": "^3.3.3",
-    "timers-browserify": "^2.0.12",
-    "typescript": "^5.1.6",
-    "web-vitals": "^3.4.0",
-    "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4"
-  }
+    "name": "front",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@babel/preset-env": "^7.22.10",
+        "async_hooks": "^1.0.0",
+        "axios": "^1.4.0",
+        "body-parser": "^1.20.2",
+        "bootstrap-icons": "^1.10.5",
+        "browserify-zlib": "^0.2.0",
+        "buffer": "^6.0.3",
+        "built": "^1.3.2",
+        "crypto-browserify": "^3.12.0",
+        "dotenv": "^16.3.1",
+        "html-webpack-plugin": "^5.5.3",
+        "mysql": "^2.18.1",
+        "net": "^1.0.2",
+        "nodemon": "^3.0.1",
+        "path": "^0.12.7",
+        "querystring": "^0.2.1",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^6.15.0",
+        "send": "^0.18.0",
+        "stream": "^0.0.2",
+        "stream-http": "^3.2.0",
+        "tar": "^6.1.15",
+        "url": "^0.11.1",
+        "util": "^0.12.5",
+        "webpack-dev-server": "^4.15.1"
+    },
+    "scripts": {
+        "start": "webpack-dev-server --mode development --open --port 0",
+        "build": "webpack --mode production",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@babel/core": "^7.22.10",
+        "@babel/preset-env": "^7.22.10",
+        "@babel/preset-react": "^7.22.5",
+        "@testing-library/jest-dom": "^6.0.1",
+        "@testing-library/react": "^14.0.0",
+        "@testing-library/user-event": "^14.4.3",
+        "babel-loader": "^9.1.3",
+        "css-loader": "^6.8.1",
+        "react-scripts": "^5.0.1",
+        "style-loader": "^3.3.3",
+        "timers-browserify": "^2.0.12",
+        "typescript": "^5.1.6",
+        "web-vitals": "^3.4.0",
+        "webpack": "^5.88.2",
+        "webpack-cli": "^5.1.4"
+    },
+    "resolutions": {
+        "webpack": "4.46.0"
+    }
 }
