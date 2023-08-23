@@ -36,7 +36,8 @@ module.exports = {
       fs: false,
       timers: false,
       http: require.resolve('stream-http'),
-      assert: require.resolve('assert')
+      assert: require.resolve('assert'),
+      "zlib": require.resolve("browserify-zlib")
     },
   },
   

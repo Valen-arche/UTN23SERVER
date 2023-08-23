@@ -14,11 +14,12 @@ var app = express();
 
 
 
-require ('dotenv') .config ();
-var pool = require ( './models/db');
-pool.query ('select * from usuarios10').then (function (resultados){
-  console.log (resultados)
+require('dotenv').config();
+var pool = require('./models/db');
+pool.query('SELECT * FROM usuarios10 ').then(function(resultados) {
+  console.log(resultados);
 });
+
 
 
 // view engine setup
