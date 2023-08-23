@@ -4,6 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+var session = require ( 'express-session')
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/admin/login');
@@ -14,7 +16,7 @@ var app = express();
 
 require ('dotenv') .config ();
 var pool = require ( './models/db');
-pool.query ('select * from usuarios').then (function (resultados){
+pool.query ('select * from usuarios10').then (function (resultados){
   console.log (resultados)
 });
 
@@ -29,6 +31,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use (session
+  ({ secret: '1234',
+  resave: false ,
+  saveUninitialized: true   }));
+  
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
@@ -54,7 +61,7 @@ app.use(function (req, res, next) {
   next(createError(404));
 });
 
-const port = 3001;
+const port = 3306;
 app.listen(port, () => {
   console.log(`Servidor en funcionamiento en http://localhost:${port}`);
 });

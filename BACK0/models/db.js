@@ -1,5 +1,6 @@
 var mysql = require('mysql');
-var util = require('util'); // Importa el módulo util
+var util = require('util'); // Importo el módulo util
+
 
 var pool = mysql.createPool({
   connectionLimit: 10,
