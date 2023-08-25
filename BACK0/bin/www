@@ -4,18 +4,15 @@
  * Module dependencies.
  */
 
-const express = require('express');
-const debug = require('debug')('view-hbs:server');
-const http = require('http');
-const hbs = require('hbs'); // Se importa el módulo 'hbs' para utilizar Handlebars como motor de plantillas
-
-const app = express();
+var app = require('../app');
+var debug = require('debug')('back0:server');
+var http = require('http');
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.PORT || '4000');
 app.set('port', port);
 
 /**
