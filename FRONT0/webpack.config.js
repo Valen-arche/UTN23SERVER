@@ -41,7 +41,7 @@ export const resolve = {
   },
 };
 export const devServer = {
-  port: 4000,
+  port: 3000,
   liveReload: true,
 };
 export const plugins = [

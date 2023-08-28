@@ -24,7 +24,7 @@ function App() {
           <Route path="/Contacto" element={<Contacto />} />
           <Route path="/Servicios" element={<Servicios />} />
           <Route path="/MapaAstral" element={<MapaAstral />} />
-        </Routes>
+        </Routes> 
       </BrowserRouter>
       <h1> HELLO</h1>
       <Footer />
