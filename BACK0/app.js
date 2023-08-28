@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var loginRouter = require ( './routes/admin/login')
+var loginRouter = require ( './routes/admin/login');
 
 var app = express();
 
@@ -30,7 +30,7 @@ app.use('/admin/login', loginRouter);
 app.use(function(req, res, next) {
   next(createError(404));
 });
-const port = 3000;
+const port = 3050;
 app.listen(port, () => {
   console.log(`Servidor en funcionamiento en http://localhost:${port}`);
 });
