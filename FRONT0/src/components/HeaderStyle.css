@@ -1,17 +1,22 @@
-.HeaderStyle{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background:#ffffff ;
-    width: 100%;
-    
+/* HeaderStyle.css */
+
+.HeaderStyle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; /* Ajusta el padding según tus necesidades */
+  background-color: #ac7bd4;
+  color: #ffffff;
 }
-.HeaderStyle:hover {
-  background-color: rgba(109, 91, 182, 0.914);
 
-    transition:1s;
-   cursor: pointer;
-  }
+.HeaderStyle a {
+  text-decoration: none;
+  color: inherit;
+}
 
-  
-.logohome{
-  max-width: 50%;
+.HeaderStyle img {
+  max-width: 32vw;
+  max-height: 33vh;
+  position: center; /* Ajusta el tamaño del logo */
+ 
 }
