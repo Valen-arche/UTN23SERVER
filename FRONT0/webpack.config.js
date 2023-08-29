@@ -1,51 +1,53 @@
-import { ProvidePlugin } from 'webpack';
-import { resolve as _resolve } from 'path';
+const webpack = require('webpack');
+const path = require('path');
 
-export const mode = 'development';
-export const entry = './src/index.js';
-export const output = {
-  path: _resolve(__dirname, 'dist'),
-  filename: 'bundle.js',
-};
-export const performance = {
-  // Desactivar advertencias para módulos críticos
-  hints: false
-};
-export const module = {
-  rules: [
-    {
-      test: /.(js|jsx)$/,
-      exclude: /node_modules/,
-      use: {
-        loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-react'],
+module.exports = {
+  mode: 'development',
+  entry: './src/index.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js',
+  },
+  performance: {
+    // Desactivar advertencias para módulos críticos
+    hints: false,
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-react'],
+          },
         },
       },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'],
+    fallback: {
+      crypto: require.resolve('crypto-browserify'),
+      fs: false,
+      timers: false,
+      http: require.resolve('stream-http'),
+      assert: require.resolve('assert'),
+      zlib: require.resolve('browserify-zlib'),
     },
-    {
-      test: /.css$/,
-      use: ['style-loader', 'css-loader'],
-    },
+  },
+  devServer: {
+    port: 3000,
+    liveReload: true,
+  },
+  plugins: [
+    new webpack.ProvidePlugin({
+      React: 'react',
+    }),
   ],
 };
-export const resolve = {
-  extensions: ['.js', '.jsx'],
-  fallback: {
-    crypto: require.resolve('crypto-browserify'),
-    fs: false,
-    timers: false,
-    http: require.resolve('stream-http'),
-    assert: require.resolve('assert'),
-    "zlib": require.resolve("browserify-zlib")
-  },
-};
-export const devServer = {
-  port: 3000,
-  liveReload: true,
-};
-export const plugins = [
-  new ProvidePlugin({
-    React: 'react',
-  }),
-];

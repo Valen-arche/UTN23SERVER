@@ -40,13 +40,10 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_FooterStyle_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../components/FooterStyle.css */ \"./src/components/FooterStyle.css\");\n/* harmony import */ var _components_FooterStyle_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_FooterStyle_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\nfunction Footer() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"FooterStyle\"\n  }, \"Copyright \\xA9 2023 Todos los derechos reservados - Magisterius.Net\");\n}\n/* harmony default export */ __webpack_exports__[\"default\"] = (Footer);\n\n//# sourceURL=webpack://utn23server/./src/components/Footer.js?");
 
-/***/ }),
+ }),
 
-/***/ "./src/components/Header.js":
-/*!**********************************!*\
-  !*** ./src/components/Header.js ***!
-  \**********************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./src/components/Header.js":
+(function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_HeaderStyle_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../components/HeaderStyle.css */ \"./src/components/HeaderStyle.css\");\n/* harmony import */ var _components_HeaderStyle_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_HeaderStyle_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\nfunction Header() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"HeaderStyle\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"a\", {\n    href: \"/\"\n  }));\n}\n/* harmony default export */ __webpack_exports__[\"default\"] = (Header);\n\n//# sourceURL=webpack://utn23server/./src/components/Header.js?");
